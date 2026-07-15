@@ -1,0 +1,38 @@
+# ═══════════════════════════════════════════
+#  GhostSniffer — Git Ignore Rules
+# ═══════════════════════════════════════════
+
+# ── OPSEC: Never push real environment config ──
+.env
+!.env.example
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environments ──
+venv/
+.venv/
+env/
+
+# ── Scan Results (may contain sensitive data) ──
+*.json
+!package.json
+!package-lock.json
+
+# ── OS Files ──
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
