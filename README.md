@@ -176,6 +176,7 @@ GhostSniffer Engine
 - **Byte Order**: All Parsers use `!` (Network/Big-Endian) not `<` (Little-Endian)
 - **Clean Shutdown**: Socket timeout + chunked sleep = fast response to Ctrl+C
 - **Platform Aware**: The code automatically handles differences between Windows and Linux
+- **Limitation**: On Linux, if the AF_PACKET socket cannot be opened (permissions), the sniffer falls back to ICMP‑only capture; passive discovery will then only see ICMP traffic.
 
 ---
 
