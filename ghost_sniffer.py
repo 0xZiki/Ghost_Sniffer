@@ -40,9 +40,12 @@ from datetime import datetime
 # ----------------------------------------------------------------------------
 
 def load_dotenv():
-    """Load environment variables from .env file if it exists."""
+    """Load environment variables from .env file if it exists (Absolute Path)."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    env_path = os.path.join(base_dir, '.env')
+    
     try:
-        with open('.env') as f:
+        with open(env_path) as f:
             for line in f:
                 line = line.strip()
                 if line and not line.startswith('#'):
