@@ -1,4 +1,4 @@
-# 👻 GhostSniffer v2.1
+#  GhostSniffer v2.1
 
 **Hardened Modular Raw-Socket Network Reconnaissance Engine**  
 *Zero External Dependencies | Raw Sockets | RFC-Compliant State Tracking | Stealth Operations*  
@@ -7,7 +7,7 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 **GhostSniffer v2.1** is an advanced, production-grade network reconnaissance and covert operations engine written in pure Python 3 using raw sockets. It provides deep visibility across Layer 2 (Data Link), Layer 3 (Network), Layer 4 (Transport), and Layer 7 (Application) without relying on third-party dependencies like Scapy, Nmap, or Pcap.
 
@@ -18,7 +18,7 @@ Originally a monolithic script, version 2.1 has been completely refactored into 
 
 ---
 
-## ⚡ Core Features
+##  Core Features
 
 | # | Feature | Layer | Description |
 |---|---------|-------|-------------|
@@ -34,7 +34,7 @@ Originally a monolithic script, version 2.1 has been completely refactored into 
 
 ---
 
-## 📋 System Requirements
+##  System Requirements
 
 - **Python 3.6+** (Standard Library only)
 - **Root / Administrator privileges** (Mandatory for `SOCK_RAW` and `AF_PACKET` capabilities)
@@ -43,7 +43,7 @@ Originally a monolithic script, version 2.1 has been completely refactored into 
 
 ---
 
-## 🚀 Installation & Quick Start
+##  Installation & Quick Start
 
 ### 1. Standalone Execution (No Installation Required)
 ```bash
@@ -70,7 +70,7 @@ ghostsniffer --help
 
 ---
 
-## 🛡️ OPSEC & Configuration (The `.env` File)
+##  OPSEC & Configuration (The `.env` File)
 
 To prevent sensitive operational parameters (custom decoy IPs, covert domains, knock authentication secrets) from leaking in command-line arguments or process tables (`ps aux`), GhostSniffer implements a deterministic 4-tier configuration hierarchy:
 
@@ -97,7 +97,7 @@ chmod 600 .env
 
 ---
 
-## 💻 Operational Modes & Usage Examples
+##  Operational Modes & Usage Examples
 
 ### 1. Passive Host Discovery (The Silent Observer)
 Listens passively to network traffic without transmitting any packets to the wire.
@@ -215,7 +215,7 @@ usage: ghost_sniffer [-h] [--mode {scan,passive,listen}] [--target TARGET]
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ghost_sniffer/
@@ -249,7 +249,7 @@ ghost_sniffer/
 
 ---
 
-## 📊 Sample Output
+##  Sample Output
 
 ### Console Report
 ```
@@ -324,7 +324,7 @@ ghost_sniffer/
 
 ---
 
-## 🧪 Automated Testing
+##  Automated Testing
 
 GhostSniffer includes an automated unit and integration test suite covering RFC 793 correlation, 32-bit sequence wraparounds, Port Knocking session tracking and replay protection, OS fingerprinting heuristics, and RFC 1071 checksums:
 
@@ -335,7 +335,7 @@ python3 -m unittest -v scratch/test_suite.py
 
 ---
 
-## ⚠️ Legal & Security Disclaimer
+##  Legal & Security Disclaimer
 
 GhostSniffer is developed solely for authorized penetration testing, security auditing, and educational protocol research. Performing unauthorized port scanning, packet injection, or network reconnaissance against systems without explicit, documented permission is strictly prohibited by law. The author and contributors assume no liability for misuse.
 
