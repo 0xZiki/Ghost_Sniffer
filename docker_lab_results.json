@@ -1,0 +1,41 @@
+{
+  "tool": "GhostSniffer v2.0",
+  "timestamp": "2026-08-10T10:54:29.187702",
+  "mode": "scan",
+  "config": {
+    "target": "172.18.0.0/24",
+    "scan_type": "udp",
+    "port": 65212,
+    "ports": null,
+    "mimicry": "dns",
+    "jitter": [
+      0.5,
+      2.0
+    ],
+    "decoys": "172.18.0.200,172.18.0.201"
+  },
+  "statistics": {
+    "packets_captured": 537,
+    "icmp_responses": 2,
+    "packets_sent": 254,
+    "decoy_packets_sent": 508,
+    "hosts_scanned": 254
+  },
+  "hosts": {
+    "172.18.0.1": {
+      "ip": "172.18.0.1",
+      "first_seen": "2026-08-10T10:48:54.346010",
+      "last_seen": "2026-08-10T10:48:54.346150",
+      "packet_count": 2,
+      "protocols": [
+        "ICMP"
+      ],
+      "status": "up",
+      "open_ports": [],
+      "os_guess": "Linux/Unix",
+      "ttl": 64,
+      "services": {},
+      "icmp_response": "Type:3 Code:3"
+    }
+  }
+}
