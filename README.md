@@ -3,7 +3,6 @@
 **Hardened Modular Raw-Socket Network Reconnaissance Engine**  
 *Zero External Dependencies | Raw Sockets | RFC-Compliant State Tracking | Stealth Operations*  
 **Created by:** `0xZiki`  
-**Language:** [English](README.md) | [العربية](README_AR.md)
 
 ---
 
